@@ -15,7 +15,7 @@ def cart_to_pol(a,b):
 
 while(True):
     
-    print("Type \"done\" in the input box if you after completing the required operations")
+    print("Type \"done\" in the input box after completing the required operations")
     option=input("Select out of the two by typing the option number   1. Polar to Cartesian   and   2.Cartesian to Polar  :")
     
     if(option=="done"):
@@ -26,10 +26,12 @@ while(True):
         a=float(input("Enter the first coordinate: "))
         b=float(input("Enter the second coordinate in radians(decimal format): "))
         pol_to_cart(a,b)
-    else:
+    elif(int(option)==2):
         a=float(input("Enter the first coordinate: "))
         b=float(input("Enter the second coordinate: "))
         cart_to_pol(a,b)
+    else:
+        print("Error! Please enter the correct option number.")
     print("\n")
     
         
